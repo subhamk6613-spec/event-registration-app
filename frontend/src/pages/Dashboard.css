@@ -1,0 +1,282 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dashboard-header {
+  margin-bottom: 1rem;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+  background: #eef2ff;
+  color: var(--primary-color);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-info h3 {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.stat-info p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1;
+}
+
+.dashboard-sections {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.dashboard-section {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.recent-registrations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.registration-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--bg-color);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.registration-info h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.registration-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.registration-time {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  .dashboard-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================
+   DASHBOARD HERO
+========================================== */
+
+.dashboard-hero {
+  background: linear-gradient(135deg,
+      #4f46e5 0%,
+      #7c3aed 50%,
+      #06b6d4 100%);
+  border-radius: 24px;
+  padding: 50px;
+  color: white;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-hero::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  top: -80px;
+  right: -50px;
+}
+
+.dashboard-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.dashboard-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  margin-bottom: 16px;
+}
+
+.dashboard-hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.dashboard-hero-subtitle {
+  opacity: 0.95;
+  font-size: 1.05rem;
+}
+
+/* ==========================================
+   STAT CARDS
+========================================== */
+
+.stat-card {
+  border-radius: 20px !important;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.stat-info p {
+  font-size: 2.2rem !important;
+  font-weight: 800;
+  color: #4f46e5;
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+.dashboard-section {
+  border-radius: 20px !important;
+  transition: all 0.3s ease;
+}
+
+.dashboard-section:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================
+   REGISTRATION ITEMS
+========================================== */
+
+.registration-item {
+  transition: all 0.3s ease;
+}
+
+.registration-item:hover {
+  transform: translateX(6px);
+  background: #f8fafc;
+}
+
+/* ==========================================
+   FINAL PREMIUM IMPROVEMENTS
+========================================== */
+
+/* Colorful Stat Cards */
+.stat-card:nth-child(1) {
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.stat-card:nth-child(2) {
+  background: linear-gradient(135deg, #ecfdf5, #ffffff);
+}
+
+.stat-card:nth-child(3) {
+  background: linear-gradient(135deg, #fdf2f8, #ffffff);
+}
+
+/* Better Hover Effect */
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 40px rgba(79, 70, 229, 0.15),
+    0 0 20px rgba(79, 70, 229, 0.08);
+}
+
+/* Better Icons */
+.stat-icon {
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+}
+
+/* Registration Card Upgrade */
+.registration-item {
+  border-radius: 14px;
+}
+
+.registration-item:hover {
+  transform: translateX(8px);
+  background: #f8fafc;
+  border-color: #6366f1;
+}
+
+/* Hero Title Upgrade */
+.dashboard-hero-title {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dashboard-hero {
+    padding: 30px 20px;
+  }
+
+  .dashboard-hero-title {
+    font-size: 2rem;
+  }
+}
