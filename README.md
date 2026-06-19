@@ -168,6 +168,14 @@ Get registrations for an event.
 * Improved responsiveness using CSS Grid and Flexbox.
 * Optimized card layouts and filter sections.
 
+
+## Deployment Note
+
+The application is fully functional in the local development environment.
+
+Frontend and backend deployment were attempted using Vercel and Render. The backend service deploys successfully, but some API routes currently return errors in the production environment. Due to time constraints, the project submission includes the complete source code, setup instructions, screenshots, and a demonstration video recorded from the fully working local environment.
+
+
 ---
 
 ## Future Improvements
