@@ -23,7 +23,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "Event Registration API Running",
+    message: "Event registration API Running",
   });
 });
 
