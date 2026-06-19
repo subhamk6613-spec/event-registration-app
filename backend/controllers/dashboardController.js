@@ -1,5 +1,5 @@
 const Event = require("../models/event");
-const Registration = require("../models/Registration");
+const Registration = require("../models/registration");
 
 const getDashboardStats = async (req, res) => {
     try {
