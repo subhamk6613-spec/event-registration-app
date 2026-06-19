@@ -138,5 +138,3 @@ npm run seed
    ```
 4. Open the `localhost` URL provided in your terminal (usually `http://localhost:5173`) in your web browser.
 
----
-*Built with ❤️ utilizing the MERN stack and modern React patterns.*
